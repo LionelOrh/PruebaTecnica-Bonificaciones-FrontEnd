@@ -1,9 +1,10 @@
-# 🧃 TIC-Technologies - Calculador de Bonificaciones
+# 🧃 TIC-Technologies - Calculador de Bonificaciones (Prueba Técnica)
 
-Sistema web moderno para gestionar productos y calcular bonificaciones automáticamente. Desarrollado con React y Vite para una experiencia de usuario fluida y eficiente.
+Sistema web moderno para gestionar productos y calcular bonificaciones automáticamente. Desarrollado con React y Vite para una experiencia de usuario fluida y eficiente como parte de una prueba técnica.
 
 ## 📋 Tabla de Contenidos
 
+- [Sobre la Prueba Técnica](#-sobre-la-prueba-técnica)
 - [Características](#-características)
 - [Tecnologías](#️-tecnologías)
 - [Requisitos Previos](#-requisitos-previos)
@@ -12,6 +13,23 @@ Sistema web moderno para gestionar productos y calcular bonificaciones automáti
 - [API Backend](#-api-backend)
 - [Estructura del Proyecto](#-estructura-del-proyecto)
 - [Scripts Disponibles](#-scripts-disponibles)
+
+## 📝 Sobre la Prueba Técnica
+
+Este proyecto fue desarrollado como parte de una **prueba técnica para TIC-Technologies**. El objetivo es demostrar habilidades en:
+
+- **React** y desarrollo frontend moderno
+- **Integración con APIs** REST
+- **Gestión de estado** en aplicaciones
+- **Diseño de interfaces** responsivas
+- **Mejores prácticas** de desarrollo
+
+### Objetivos Específicos
+- ✅ Crear formulario para gestión de productos
+- ✅ Implementar tabla con paginación
+- ✅ Conectar con API backend para cálculo de bonificaciones
+- ✅ Manejo de errores y validaciones
+- ✅ Interfaz moderna y responsive
 
 ## ✨ Características
 
@@ -253,14 +271,35 @@ Para contribuir al proyecto:
 
 ---
 
-## 🎯 Próximos Pasos
+## 🎯 Características Implementadas (Prueba Técnica)
 
+### ✅ Completadas
+- [x] **Formulario de Productos**: Añadir productos con validaciones
+- [x] **Tabla de Productos**: Visualización con paginación
+- [x] **Integración API**: Conexión con backend para bonificaciones
+- [x] **Tabla de Bonificaciones**: Mostrar resultados calculados
+- [x] **Manejo de Errores**: Validaciones y alertas de usuario
+- [x] **Interfaz Responsiva**: Diseño adaptativo y moderno
+- [x] **Estados de Loading**: Feedback visual durante operaciones
+
+### 🔮 Mejoras Futuras
 - [ ] Agregar tests unitarios
 - [ ] Implementar TypeScript
 - [ ] Añadir más validaciones
-- [ ] Mejorar manejo de estados
-- [ ] Agregar documentación de API
+- [ ] Mejorar manejo de estados con Context/Redux
+- [ ] Agregar documentación de API con Swagger
 
 ---
 
-**Desarrollado con ❤️ para TIC-Technologies**
+## 👨‍💻 Sobre la Implementación
+
+Este proyecto demuestra:
+- **Arquitectura de componentes** bien estructurada
+- **Separación de responsabilidades** (servicios, componentes, estilos)
+- **Manejo de estados** con React Hooks
+- **Comunicación con APIs** externas
+- **Experiencia de usuario** optimizada
+
+---
+
+**Desarrollado como Prueba Técnica para TIC-Technologies** 🚀
