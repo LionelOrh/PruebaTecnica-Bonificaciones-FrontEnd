@@ -2,8 +2,15 @@
 
 Sistema web moderno para gestionar productos y calcular bonificaciones automáticamente. Desarrollado con React y Vite para una experiencia de usuario fluida y eficiente como parte de una prueba técnica.
 
+## 🌐 Demo en Vivo
+
+🚀 **Prueba la aplicación aquí**: [https://prueba-tecnica-bonificaciones-front.vercel.app/](https://prueba-tecnica-bonificaciones-front.vercel.app/)
+
+> ✨ **Aplicación desplegada en Vercel** - Lista para usar sin instalación
+
 ## 📋 Tabla de Contenidos
 
+- [Demo en Vivo](#-demo-en-vivo)
 - [Sobre la Prueba Técnica](#-sobre-la-prueba-técnica)
 - [Características](#-características)
 - [Tecnologías](#️-tecnologías)
@@ -65,6 +72,13 @@ npm install -g pnpm
 
 ## 🚀 Instalación
 
+> 💡 **¿Quieres probar rápidamente?** Visita el [Demo en Vivo](https://prueba-tecnica-bonificaciones-front.vercel.app/) sin necesidad de instalación.
+
+### Opción 1: Usar Demo en Vivo (Recomendado)
+Simplemente visita: **[https://prueba-tecnica-bonificaciones-front.vercel.app/](https://prueba-tecnica-bonificaciones-front.vercel.app/)**
+
+### Opción 2: Instalación Local
+
 ### 1. Clonar el repositorio
 
 ```bash
@@ -109,6 +123,8 @@ const API_URL = "http://localhost:8000/api/pedido/bonificaciones";
 **Nota**: Asegúrate de que tu backend local esté ejecutándose en `http://localhost:8000`
 
 ## 📖 Uso
+
+> 🎯 **Acceso Directo**: Puedes probar todas las funcionalidades en el [Demo en Vivo](https://prueba-tecnica-bonificaciones-front.vercel.app/) sin instalación.
 
 ### Paso a Paso para Probar el Proyecto
 
@@ -353,7 +369,18 @@ Este proyecto demuestra:
 - **Manejo de estados** con React Hooks
 - **Comunicación con APIs** externas
 - **Experiencia de usuario** optimizada
+- **Despliegue en producción** con Vercel y Render
+
+### 🚀 Entornos de Despliegue
+- **Frontend**: [Vercel](https://prueba-tecnica-bonificaciones-front.vercel.app/) 
+- **Backend**: [Render](https://pruebatecnica-bonificaciones-backend.onrender.com/)
+- **Integración**: Comunicación entre servicios en la nube
 
 ---
 
 **Desarrollado como Prueba Técnica para TIC-Technologies** 🚀
+
+📌 **Enlaces importantes:**
+- 🌐 **Demo**: [https://prueba-tecnica-bonificaciones-front.vercel.app/](https://prueba-tecnica-bonificaciones-front.vercel.app/)
+- 💻 **Código Frontend**: [GitHub Repository](https://github.com/LionelOrh/PruebaTecnica-Bonificaciones-FrontEnd)
+- 🔧 **API Backend**: [https://pruebatecnica-bonificaciones-backend.onrender.com/](https://pruebatecnica-bonificaciones-backend.onrender.com/)
