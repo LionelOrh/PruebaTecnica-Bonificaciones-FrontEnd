@@ -49,8 +49,8 @@ npm install -g pnpm
 ### 1. Clonar el repositorio
 
 ```bash
-git clone <url-del-repositorio>
-cd Frontend
+git clone https://github.com/LionelOrh/PruebaTecnica-Bonificaciones-FrontEnd.git
+cd PruebaTecnica-Bonificaciones-FrontEnd
 ```
 
 ### 2. Instalar dependencias
