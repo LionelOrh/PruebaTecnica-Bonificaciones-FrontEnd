@@ -1,0 +1,34 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  background: #2e2f55;
+  color: white;
+  border-radius: 2rem;
+}
+
+.header-title {
+  font-size: 2.5rem;
+  font-weight: 300;
+  font-family: poppins, sans-serif;
+}
+
+.header-subtitle {
+  font-size: 1.5rem;
+  font-family: poppins, sans-serif;
+}
+
+
+
+/* Contenedor para las dos tablas */
+.tables-container {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
