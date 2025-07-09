@@ -9,6 +9,7 @@ Sistema web moderno para gestionar productos y calcular bonificaciones automáti
 - [Tecnologías](#️-tecnologías)
 - [Requisitos Previos](#-requisitos-previos)
 - [Instalación](#-instalación)
+- [Configuración de API](#️-configuración-de-api)
 - [Uso](#-uso)
 - [API Backend](#-api-backend)
 - [Estructura del Proyecto](#-estructura-del-proyecto)
@@ -54,7 +55,7 @@ Antes de comenzar, asegúrate de tener instalado:
 
 - **Node.js** (versión 18 o superior)
 - **PNPM** (recomendado) o npm
-- **Backend API** ejecutándose en `http://localhost:8000`
+- **Backend API** (ver [Configuración de API](#-configuración-de-api))
 
 ### Instalación de PNPM (si no lo tienes)
 
@@ -85,13 +86,38 @@ pnpm dev
 
 La aplicación estará disponible en: `http://localhost:5173`
 
+## ⚙️ Configuración de API
+
+### 🌐 Backend en Producción (Configuración Actual)
+Por defecto, la aplicación está configurada para usar el **backend en producción**:
+
+```
+https://pruebatecnica-bonificaciones-backend.onrender.com/api/pedido/bonificaciones
+```
+
+### 🏠 Backend Local (Para Desarrollo)
+Si quieres usar un backend local, edita el archivo `src/services/apiService.js`:
+
+```javascript
+// Comentar la URL de producción
+// const API_URL = "https://pruebatecnica-bonificaciones-backend.onrender.com/api/pedido/bonificaciones";
+
+// Descomentar la URL local
+const API_URL = "http://localhost:8000/api/pedido/bonificaciones";
+```
+
+**Nota**: Asegúrate de que tu backend local esté ejecutándose en `http://localhost:8000`
+
 ## 📖 Uso
 
 ### Paso a Paso para Probar el Proyecto
 
-#### 1. Asegurar Backend Activo
-- El backend debe estar ejecutándose en `http://localhost:8000`
-- El endpoint debe responder en: `http://localhost:8000/api/pedido/bonificaciones`
+#### 1. Backend Configurado ✅
+- **Producción**: La aplicación ya está configurada para usar el backend en producción
+- **URL**: `https://pruebatecnica-bonificaciones-backend.onrender.com/api/pedido/bonificaciones`
+- **Estado**: ✅ Listo para usar sin configuración adicional
+
+> 💡 **Nota**: Si quieres usar un backend local, consulta la sección [Configuración de API](#️-configuración-de-api)
 
 #### 2. Agregar Productos
 1. Completa el formulario con:
@@ -124,11 +150,19 @@ La aplicación estará disponible en: `http://localhost:5173`
 
 ## 🔌 API Backend
 
-### Endpoint Principal
+### Endpoints Disponibles
 
+#### 🌐 Producción (Configuración Actual)
+```
+POST https://pruebatecnica-bonificaciones-backend.onrender.com/api/pedido/bonificaciones
+```
+
+#### 🏠 Desarrollo Local (Comentado en código)
 ```
 POST http://localhost:8000/api/pedido/bonificaciones
 ```
+
+> 📍 **Ubicación de configuración**: `src/services/apiService.js`
 
 ### Formato de Datos
 
@@ -232,10 +266,30 @@ pnpm lint
 Error al calcular bonificaciones
 ```
 
-**Solución:**
+**Soluciones posibles:**
+
+#### 🌐 Con Backend de Producción (configuración actual)
+1. Verificar conexión a internet
+2. El backend en Render puede tardar unos segundos en "despertar" si ha estado inactivo
+3. Intentar nuevamente en caso de timeout inicial
+
+#### 🏠 Con Backend Local (si lo cambias)
 1. Verificar que el backend esté ejecutándose en `http://localhost:8000`
 2. Comprobar que el endpoint `/api/pedido/bonificaciones` esté disponible
 3. Revisar CORS en el backend si es necesario
+4. Asegurarse de haber cambiado la URL en `src/services/apiService.js`
+
+### Cambiar entre Producción y Local
+
+Para cambiar a backend local, edita `src/services/apiService.js`:
+
+```javascript
+// Comentar línea de producción
+// const API_URL = "https://pruebatecnica-bonificaciones-backend.onrender.com/api/pedido/bonificaciones";
+
+// Descomentar línea local
+const API_URL = "http://localhost:8000/api/pedido/bonificaciones";
+```
 
 ### Error al Agregar Productos
 

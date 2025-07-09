@@ -1,4 +1,5 @@
-const API_URL = "http://localhost:8000/api/pedido/bonificaciones";
+const API_URL = "https://pruebatecnica-bonificaciones-backend.onrender.com/api/pedido/bonificaciones";
+//const API_URL = "http://localhost:8000/api/pedido/bonificaciones";
 
 export async function simularBonificaciones(productos) {
   const response = await fetch(API_URL, {
